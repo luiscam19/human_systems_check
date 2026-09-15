@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expedition Report</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="report-shell">
+      <header class="report-header">
+        <p class="eyebrow">CS-110 // Expedition Report</p>
+        <h1>Recover reports to verify occupants.</h1>
+        <p>Look throughout location for any identifiable occupant markers</p>
+      </header>
+
+      <section class="scene is-active" data-scene="0">
+        <p class="scene-number">Scene 01 // Arrival</p>
+        <h2>What did your character expect to find?</h2>
+        <img
+  src="images/arrival.jpg"
+  alt="Expedition team arriving at the abandoned Kairova dome."
+  class="scene-image"
+/>
+        <p>Chappie and his crew seek to find details and identifiers throughout their mission to help identify occupants that did not pass intial scans.</p>
+      </section>
+
+      <section class="scene" data-scene="1" hidden>
+        <p class="scene-number">Scene 02 // Discovery</p>
+        <h2>What changed the mission?</h2>
+        <img
+  src="images/discovery.jpg"
+  alt="Damaged Kairova robot carrying recovered folders and reports covered in leaking hydraulic fluid."
+  class="scene-image"
+/>
+        <p>Chappie finds reports, details about the unidentified occupant, but the atmospher and journey throughout his search have made his exterior fall apart and make the reports of the occupant unreadable.</p>
+      </section>
+
+      <section class="scene" data-scene="2" hidden>
+        <p class="scene-number">Scene 03 // Outcome</p>
+        <h2>What should Kairova do next?</h2>
+        <img
+  src="images/outcome.jpg"
+  alt="Damaged Kairova robot downloading its recovered memory while robotic spiders swarm the facility and an explosion countdown approaches zero."
+  class="scene-image"
+/>
+        <p>Chappies internal memory chip captures all reports and saves them, but now the mission timer is expiring and the planet is about to explode and the robot spider inhabitants threaten to finish off chappie before his success in downloading the files</p>
+      </section>
+      <section class="scene" data-scene="3" hidden>
+        <p class="scene-number">Scene 04 // fin</p>
+        <h2>did you fail?</h2>
+        <img
+  src="images/fin.jpg"
+  alt="successful download of files and uplod to command center."
+  class="scene-image"
+/>
+        <p>successful download of files recovered from Chappie's internal memory, chappie dies on his mission, but reports to identify occupant that posed a threat is successfully uploaded to command center.</p>
+      </section>
+
+      <nav class="scene-controls" aria-label="Story scenes">
+        <button id="previous-scene" type="button">Previous</button>
+        <span id="scene-status" aria-live="polite">Scene 1 of 4</span>
+        <button id="next-scene" type="button">Next</button>
+      </nav>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
